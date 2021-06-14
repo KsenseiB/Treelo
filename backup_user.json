@@ -1,0 +1,27 @@
+[
+    {
+        "username": "Guest",
+        "password": "Guest",
+        "fullname": "Guest"
+    },
+    {
+        "username": "KoralS",
+        "password": "koral",
+        "fullname": "Koral Sabbah"
+    },
+    {
+        "username": "KseniaB",
+        "password": "ksenia",
+        "fullname": "Ksenia Braginsky"
+    },
+    {
+        "username": "MiriamB",
+        "password": "miriam",
+        "fullname": "Miriam Baranovska"
+    },
+    {
+        "username": "admin",
+        "password": "admin",
+        "fullname": "Adminov"
+    }
+]

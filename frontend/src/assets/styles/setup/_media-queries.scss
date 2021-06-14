@@ -1,0 +1,204 @@
+// @media only screen and (min-width: 320px) and (max-width: 479px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  a {
+    display: flex;
+    width: 47%;
+  }
+
+  .board-nav-filter {
+    display: none;
+  }
+
+  .select-board-container {
+    display: flex;
+    gap: 5px;
+    .template {
+      flex-grow: 1;
+      white-space: normal;
+    }
+  }
+
+  .board-container {
+    & > * {
+      margin: 0;
+      gap: 7px;
+    }
+    .board-nav-left,
+    .board-nav-right {
+      float: right;
+      gap: 5px;
+    }
+
+    .description-title,
+    .activity-title {
+      margin-top: 3px;
+      font-size: 15px;
+    }
+  }
+
+  .modal-content {
+    margin: 40px 7px 0 7px;
+    width: auto;
+    position: relative;
+    background-color: #f4f5f7;
+    overflow: scroll;
+    border-radius: 2px;
+    transition: all 500ms ease-in-out;
+    // display: flex;
+    // flex-direction: column;
+    // flex-wrap: wrap;
+    .card-details-title {
+      white-space: normal;
+      word-wrap: break-word;
+      h2 {
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+    .modal-content-wrapper {
+      flex-direction: column;
+    }
+    & > * {
+      width: 100%;
+    }
+  }
+  button,
+  .btn {
+    color: $darktxt;
+    font-size: em(16px);
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.1s linear;
+    // margin: 0 5px;
+    line-height: 24px;
+    border-radius: 3px;
+    padding: 1px 6px;
+    cursor: pointer;
+    &:hover {
+      background-color: $hovergray;
+    }
+    &.active {
+      background-color: rgba(0, 0, 0, 0.76);
+    }
+  }
+
+  .main-boards {
+    flex-wrap: wrap;
+  }
+  // Sidebar menu
+  .menu-title {
+    margin: 0 auto;
+  }
+  .card-sidebar {
+    color: #172b4d;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    a {
+      color: #172b4d;
+    }
+    button {
+      background-color: rgba(9, 30, 66, 0.04);
+      padding: 6px 10px;
+      align-items: center;
+      user-select: none;
+      // margin-bottom: 8px;
+      // margin-left: 0;
+      width: calc(50% - 8px);
+    }
+    h3 {
+      text-transform: uppercase;
+      color: #5e6c84;
+      font-weight: bold;
+      line-height: 16px;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+  }
+  .modal-content {
+    .card-sidebar button {
+      width: calc(50% - 8px);
+    }
+    .card-sidebar-container {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  // .main-boards {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-content: center;
+  //   align-items: center;
+  // }
+  .app-header span.boards-btn {
+    display: none;
+  }
+
+  .card-preview-due-date-container {
+    padding: 7px 6px;
+    border-radius: 4px;
+    margin: 0;
+    vertical-align: middle;
+    line-height: 12px;
+    svg {
+      margin-right: 1.5px;
+    }
+  }
+  .card-details-cover-image {
+    background-size: cover;
+    height: 160px;
+  }
+}
+
+// @media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) {
+  .modal-content {
+    position: relative;
+    background-color: #f4f5f7;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    // padding: 20px;
+    overflow: scroll;
+    max-width: 75vw;
+    min-height: 80vh;
+    // border: 1px solid #888;
+    border-radius: 2px;
+    width: 768px;
+    transition: all 500ms ease-in-out;
+    .card-sidebar {
+      flex-direction: column;
+      gap: 6px;
+    }
+  }
+  .select-board-container {
+    flex-wrap: nowrap;
+  }
+  button,
+  .btn {
+    color: $darktxt;
+    font-size: em(16px);
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.1s linear;
+    line-height: 24px;
+    border-radius: 3px;
+    padding: 5px 9px;
+    cursor: pointer;
+    &:hover {
+      background-color: $hovergray;
+    }
+    &.active {
+      background-color: rgba(0, 0, 0, 0.76);
+    }
+  }
+  .side-bar-container {
+    width: 340px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .main-boards {
+    max-width: 900px;
+  }
+}

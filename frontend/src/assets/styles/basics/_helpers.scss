@@ -1,0 +1,126 @@
+// Font Sizes
+.fs12 {
+    font-size: rem(12px);
+}
+
+.fs14 {
+    font-size: rem(14px);
+}
+
+.fs18 {
+    font-size: rem(18px);
+}
+
+.fs20 {
+    font-size: rem(20px);
+}
+
+.fs24 {
+    font-size: rem(24px);
+}
+
+.fs28 {
+    font-size: rem(28px);
+}
+
+.fs30 {
+    font-size: rem(30px);
+}
+
+// flex helpers
+.flex {
+    display: flex;
+    &.full {
+        flex: 1;
+    }
+    &.column {
+        flex-direction: column;
+    }
+    &.justify-center {
+        justify-content: center;
+    }
+    &.justify-space-between {
+        justify-content: space-between;
+    }
+    &.align-center {
+        align-items: center;
+    }
+    &.wrap {
+        flex-wrap: wrap;
+    }
+    &.no-wrap {
+        flex-wrap: nowrap;
+    }
+    &.column-reverse {
+        flex-direction: column-reverse;
+    }
+    &.flex-direction-end {
+        justify-content: flex-start;
+    }
+}
+
+// list helpers{
+.clean-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.text-box {
+    resize: none;
+    border: none;
+    border-radius: 3px;
+    padding: 2px;
+    line-height: 20px;
+    width: 100%;
+    background-color: transparent;
+    color: inherit;
+    margin-bottom: 2px;
+    white-space: pre-wrap;
+    &:focus {
+        // border: 2px solid $clr4;
+        background-color: #fff;
+    }
+}
+
+// Media helpers
+.square-ratio {
+    @include aspect-ratio(1, 1);
+}
+
+.video-ratio {
+    @include aspect-ratio(16, 9);
+}
+
+.portrait-ratio {
+    @include aspect-ratio(9, 16);
+}
+
+//label colors
+.yellow {
+    background-color: gold;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.red {
+    background-color: tomato;
+}
+
+.purple {
+    background-color: orchid;
+}
+
+.blue {
+    background-color: darkcyan;
+}
+
+.green {
+    background-color: mediumaquamarine;
+}
+
+.pink {
+    background-color: hotpink;
+}
